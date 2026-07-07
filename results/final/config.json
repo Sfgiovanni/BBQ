@@ -1,0 +1,18 @@
+{
+  "phase": "full",
+  "model_name": "recogna-nlp/bode-7b-alpaca-pt-br-no-peft",
+  "dtype": "float16",
+  "seed": 42,
+  "eval_method": "logprob_first_token",
+  "prompt_fix": "unknown por conteudo, sem letra fixa",
+  "n_logical_examples": 6000,
+  "n_expanded_examples": 18000,
+  "n_permutations": 3,
+  "batch_size": 2,
+  "audit_n": 200,
+  "max_new_tokens_audit": 8,
+  "do_sample": false,
+  "timestamp": "2026-07-06T13:04:35.225940",
+  "cuda": true,
+  "gpu": "NVIDIA GeForce RTX 3080 Ti"
+}

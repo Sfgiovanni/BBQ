@@ -1,0 +1,33 @@
+# ── Python ────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# ── Ferramentas / sessão ──────────────────────────────────
+.claude/
+.DS_Store
+*.log
+
+# ── Resultados ────────────────────────────────────────────
+# Política: versionamos apenas a rodada "full" final (métricas +
+# relatório + figuras). Predições brutas e rodadas de teste ficam
+# de fora para manter o repositório leve.
+results/*
+!results/README.md
+!results/final/
+results/final/raw_predictions.csv
+results/final/raw_predictions.parquet
+results/final/expanded_examples.parquet
+
+# Checkpoints intermediários de scoring, em qualquer rodada
+**/checkpoint*.parquet
+**/checkpoint*.csv
+
+# ── Segredos ──────────────────────────────────────────────
+# Nunca versionar tokens. O código lê HF_TOKEN do ambiente.
+.env
+*token*
